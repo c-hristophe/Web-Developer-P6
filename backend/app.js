@@ -19,6 +19,8 @@ app.use((req, res, next) => {
 
   app.use(bodyParser.json());
 
-  // Enregistrement des routeurs
+  // Enregistrement router
 
 app.use('/api/auth', userRoutes);
+
+module.exports = app;
